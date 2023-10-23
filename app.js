@@ -4,7 +4,7 @@ const btn = document.getElementById("calculate");
 
 btn.addEventListener("click", () => {
 
-  const billAmount = parseInt(document.getElementById("bill-amount").value);
+  const billAmount = +(document.getElementById("bill-amount").value);
   const percentageTip =  document.getElementById("percentage-tip").value;
 
   let tip = billAmount * (+percentageTip / 100);
